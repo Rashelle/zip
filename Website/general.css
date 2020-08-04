@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+main {
+  display: block;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.15;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+}

@@ -1,8 +1,19 @@
 {
-  "window.zoomLevel": 0,
-  "workbench.iconTheme": "vscode-icons",
-  "vsicons.projectDetection.disableDetect": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "eslint.autoFixOnSave": true,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.trimAutoWhitespace": true,
+  "html.format.wrapAttributes": "force-aligned",
+  "html.format.contentUnformatted": "pre",
+  "html.autoClosingTags": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[html]": {
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false
+  },
+  "[mustache]": {
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false
+  }
 }

@@ -1,20 +1,21 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="search.css" />
-    <link rel="stylesheet" type="text/css" href="general.css" />
-    <link rel="stylesheet" type="text/css" href="header.css" />
-    <link rel="stylesheet" type="text/css" href="search-bar.css" />
-    <link rel="stylesheet" type="text/css" href="filter-bar.css" />
+    <link rel="stylesheet" type="text/css" href="../style/search.css" />
+    <link rel="stylesheet" type="text/css" href="../style/general.css" />
+    <link rel="stylesheet" type="text/css" href="../style/header.css" />
+    <link rel="stylesheet" type="text/css" href="../style/search-bar.css" />
+    <link rel="stylesheet" type="text/css" href="../style/filter-bar.css" />
+    <link rel="stylesheet" type="text/css" href="../style/main.css" />
+
     <title>Zip Your Job</title>
   </head>
   <body>
-    <script src="./app.js"></script>
     <div class="main-app">
       <!--  header -->
       <div class="header">
         <!--  top bar -->
         <div class="top-bar">
-          <img class="logo" src="../assets/logo.svg" alt="zip-logo" />
+          <img class="logo" src="../../assets/logo.svg" alt="zip-logo" />
           <nav class="top-nav">
             <a class="top-nav-link">Jobs</a>
             <a class="top-nav-link">Salaries</a>
@@ -45,9 +46,25 @@
           <a class="filter-link">All Companies</a>
         </nav>
       </div>
+      <!-- main -->
       <main>
-        Hi!!
+        <!-- path bar -->
+        <div class="path-bar">
+          <a class="path-link">All Jobs /</a>
+          <a class="path-link">Software Engineer Jobs /</a>
+          <a class="path-link">Software Engineer Jobs in San Francisco, CA </a>
+        </div>
+        <!-- jobs -->
+        <div class="jobs-stats">
+          61+ Singer Jobs in Lebanon, KS Within 5000 miles of Lebanon, KS
+          <a>Change location</a>
+        </div>
+        <div id="position-snippets-section"></div>
       </main>
     </div>
   </body>
+  <footer>
+    <script type="text/javascript" src="../js/positionTemplate.js"></script>
+    <script src="../../app.js"></script>
+  </footer>
 </html>

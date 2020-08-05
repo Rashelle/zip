@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55" height="32" viewBox="0 0 55 32">
+  <style>
+    .st1{fill:#f8f9fa;stroke:#cbcfd0;} .st2{fill:#cbcfd0;} .st3{fill:#f8f9fa;stroke:#b1b6b8;}
+  </style>
+  <path class="st1" d="M29 17.5h3v-11h14v23H1v-18h11v-4L20.5 1 29 7.5v10z"/>
+  <path class="st2" d="M3.5 16h2v2h-2v-2zm5 0h2v2h-2v-2zm-5 4h2v2h-2v-2zm5 0h2v2h-2v-2zm27-4h2v2h-2v-2zm5 0h2v2h-2v-2zm-5-4h2v2h-2v-2zm5 0h2v2h-2v-2zm-5 8h2v2h-2v-2zm5 0h2v2h-2v-2zm-26-8h2v2h-2v-2zm5 0h2v2h-2v-2zm-5 4h2v2h-2v-2zm5 0h2v2h-2v-2zm5-4h2v2h-2v-2zm0 4h2v2h-2v-2zm-10 4h2v2h-2v-2zm5 0h2v2h-2v-2zm5 0h2v2h-2v-2zm-21 4h2v2h-2v-2zm5 0h2v2h-2v-2zm27 0h2v2h-2v-2zm5 0h2v2h-2v-2zm-26 0h2v2h-2v-2zm5 0h2v2h-2v-2zm5 0h2v2h-2v-2z"/>
+  <path class="st3" d="M49 26.8v5"/>
+  <circle class="st1" cx="49" cy="22.5" r="5"/>
+</svg>

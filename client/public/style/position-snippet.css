@@ -16,6 +16,19 @@
   min-width: 280px;
 }
 
+.position-apply {
+  border-radius: 20px;
+  color: #268814;
+  background: #fff none;
+  border: 1px solid #d8dbdc;
+  font-weight: 400;
+  padding: 8px 15px 8px 15px;
+  font-size: 13px;
+  position: absolute;
+  right: 50px;
+  top: 8px;
+}
+
 .position-fav-btn {
   position: absolute;
   top: 8px;
@@ -28,7 +41,8 @@
   border: solid 1px #e0e2e3;
 }
 
-.position-fav-btn:hover {
+.position-fav-btn:hover,
+.position-apply:hover {
   background-color: #f5f6f7;
   border-color: #d8dbdc;
 }

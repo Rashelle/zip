@@ -29,6 +29,11 @@ function generatePositionSnippet(positionId, positionData) {
   }
 
   appendContent(positionBox, "button", {
+    elmContent: "Quick Apply",
+    elmClass: "position-apply"
+  });
+
+  appendContent(positionBox, "button", {
     elmClass: ["position-fav-btn", positionData.isFavorite && "favorite"],
     eventListener: {
       eventName: "click",
@@ -37,10 +42,12 @@ function generatePositionSnippet(positionId, positionData) {
       }
     }
   });
+
   appendContent(positionBox, "img", {
     elmContent: positionData.logo,
     elmClass: "position-logo"
   });
+
   appendContent(positionBox, "a", {
     elmContent: positionData.name,
     elmClass: "position-name",

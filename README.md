@@ -77,6 +77,12 @@ git clone https://github.com/your_username_/zip.git
 npm install
 ```
 
+4. Run the app
+
+```sh
+npm start
+```
+
 <!-- USAGE EXAMPLES -->
 
 ## Usage

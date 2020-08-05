@@ -1,9 +1,26 @@
 function renderPositionSnippets(jobPositions) {
-  const positions = Object.values(jobPositions);
-  return positions.forEach(position => generatePositionSnippet(position));
+  const favoritePositionsMap = getFavoritePositionsMap();
+
+  Object.keys(jobPositions).forEach(positionId => {
+    const isFavorite = favoritePositionsMap[positionId];
+    generatePositionSnippet(positionId, {
+      ...jobPositions[positionId],
+      isFavorite
+    });
+  });
 }
 
-function generatePositionSnippet(position) {
+function onFavoriteBtnClick(positionBox, positionId) {
+  const isFavorite = toggleFavoritePosition(positionId);
+
+  if (isFavorite) {
+    positionBox.classList.add("favorite");
+  } else {
+    positionBox.classList.remove("favorite");
+  }
+}
+
+function generatePositionSnippet(positionId, positionData) {
   const positionBox = document.createElement("div");
   positionBox.classList.add("position-snippet");
 
@@ -11,49 +28,61 @@ function generatePositionSnippet(position) {
     return;
   }
 
+  appendContent(positionBox, "button", {
+    elmClass: ["position-fav-btn", positionData.isFavorite && "favorite"],
+    eventListener: {
+      eventName: "click",
+      eventHandler: e => {
+        onFavoriteBtnClick(e.target, positionId);
+      }
+    }
+  });
   appendContent(positionBox, "img", {
-    elmContent: position.logo,
+    elmContent: positionData.logo,
     elmClass: "position-logo"
   });
   appendContent(positionBox, "a", {
-    elmContent: position.name,
+    elmContent: positionData.name,
     elmClass: "position-name",
-    eventListener: { eventName: "click", eventHandler: () => turnOverlayOn() }
+    eventListener: {
+      eventName: "click",
+      eventHandler: () => turnOverlayOn(positionBox)
+    }
   });
   appendContent(positionBox, "a", {
-    elmContent: position.company,
+    elmContent: positionData.company,
     elmClass: "position-company"
   });
   appendContent(positionBox, "a", {
-    elmContent: position.location,
+    elmContent: positionData.location,
     elmClass: "position-location"
   });
 
-  const payStr = `Pay $${position.minPay} - $${position.maxPay}`;
+  const payStr = `Pay $${positionData.minPay} - $${positionData.maxPay}`;
   appendContent(positionBox, "div", {
     elmContent: payStr,
     elmClass: "position-pay"
   });
 
-  const benefitsStr = `Benefits ${position.benefits}`;
+  const benefitsStr = `Benefits ${positionData.benefits}`;
   appendContent(positionBox, "div", {
     elmContent: benefitsStr,
     elmClass: "position-benefits"
   });
 
-  const typeStr = `Type ${position.type}`;
+  const typeStr = `Type ${positionData.type}`;
   appendContent(positionBox, "div", {
     elmContent: typeStr,
     elmClass: "position-type"
   });
 
   appendContent(positionBox, "div", {
-    elmContent: position.note,
+    elmContent: positionData.note,
     elmClass: "position-note"
   });
 
   appendContent(positionBox, "div", {
-    elmContent: position.description,
+    elmContent: positionData.description,
     elmClass: "position-description"
   });
 
@@ -69,10 +98,21 @@ function appendContent(parentElm, elmType, options = {}) {
   }
 
   const el = document.createElement(elmType);
-  if (elmType == "img") el.setAttribute("src", elmContent);
-  !!elmClass && el.classList.add(elmClass);
-  const content = document.createTextNode(elmContent);
-  if (elmType != "img") el.appendChild(content);
+
+  if (elmClass) {
+    const elmClasses = typeof elmClass == "string" ? [elmClass] : elmClass;
+    el.classList.add(...elmClasses);
+  }
+
+  if (elmContent) {
+    const content = document.createTextNode(elmContent);
+
+    if (elmType == "img") {
+      el.setAttribute("src", elmContent);
+    } else {
+      el.appendChild(content);
+    }
+  }
 
   if (eventListener) {
     const { eventName, eventHandler } = eventListener;

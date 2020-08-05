@@ -10,4 +10,10 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+#overlay > :first-child {
+  width: 80%;
 }

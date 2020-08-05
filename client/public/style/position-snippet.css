@@ -16,6 +16,31 @@
   min-width: 280px;
 }
 
+.position-fav-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  width: 31px;
+  height: 31px;
+  border: solid 1px #e0e2e3;
+}
+
+.position-fav-btn:hover {
+  background-color: #f5f6f7;
+  border-color: #d8dbdc;
+}
+.position-fav-btn:before {
+  content: "\2606";
+}
+
+.position-fav-btn.favorite:before {
+  content: "\2605";
+  color: #ffd700;
+}
+
 .position-logo {
   width: 30px;
   height: 30px;

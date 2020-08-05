@@ -1,7 +1,12 @@
-function turnOverlayOn() {
-  document.getElementById("overlay").style.display = "block";
+function turnOverlayOn(childElm) {
+  const overlay = document.getElementById("overlay");
+  overlay.appendChild(childElm.cloneNode(true));
+  overlay.style.display = "flex";
+  //   renderPositionSnippets(jobPositions);
 }
 
 function turnOverlayOff() {
-  document.getElementById("overlay").style.display = "none";
+  const overlay = document.getElementById("overlay");
+  overlay.style.display = "none";
+  overlay.innerHTML = "";
 }

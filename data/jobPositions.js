@@ -1,30 +1,33 @@
 const jobPositions = {
   "1a2b3c": {
-    logo: "",
+    logo: "./assets/sales-logo.jpeg",
     name: "Tax Accountant",
     company: "Singer Burke",
     location: "Los Angeles, CA",
     type: "full-time",
-    benefits: "none",
+    benefits: "Medical, Life, Dental, 401K, Vision",
     remote: true,
     note: "",
     minPay: "100,000",
     maxPay: "150,000",
     timeRangePay: "Annually",
-    jobDescription: "Working with money $$$$"
+    description:
+      " Burke Zimmer LLP is a well-established CPA / entertainment business management firm in the San Fernando Valley. We specialize in providing integrated investment, tax, and financial services to          "
   },
   "4a3bbc": {
-    logo: "",
+    logo: "./assets/singer-logo.jpeg",
     name: "Singer",
     company: "Beatles",
     location: "Los Angeles, CA",
     type: "full-time",
-    benefits: "none",
     remote: true,
     note: "",
     minPay: "10,000",
     maxPay: "15,000",
     timeRangePay: "Annually",
-    jobDescription: "Best singer"
+    description:
+      "The successful candidate for this position will be a 1099 contractor with Music Ministry International and be responsible for the following: GENERAL: 1.0 The Pianist/Organist and Song Leader shall, The successful candidate for this position will be a 1099 contractor wit , The successful candidate for this position will be a 1099 contractor wit  "
   }
 };
+
+module.exports = { jobPositions };

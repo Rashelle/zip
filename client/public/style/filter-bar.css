@@ -1,0 +1,20 @@
+.filter-bar {
+  padding: 10px 60px 10px 60px;
+}
+
+.filter-link {
+  color: black;
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+.filter-link:hover {
+  text-decoration: underline;
+}
+
+.filter-link::after {
+  content: " ▾";
+  width: 0;
+  height: 0;
+  color: rgb(114, 119, 124);
+}

@@ -29,19 +29,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="./style/search-bar.css"
-      media="screen"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./style/filter-bar.css"
-      media="screen"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./style/main.css"
+      href="./style/content.css"
       media="screen"
     />
     <link
@@ -53,57 +41,55 @@
     <title>Zip Your Job</title>
   </head>
   <body>
-    <div class="main-app">
-      <div id="overlay" onClick="turnOverlayOff()"></div>
-      <!--  header -->
-      <div class="header">
-        <!--  top bar -->
-        <div class="top-bar">
-          <img class="logo" src="./assets/logo.svg" alt="zip-logo" />
-          <nav class="top-nav">
-            <a class="top-nav-link">Jobs</a>
-            <a class="top-nav-link">Salaries</a>
-            <a class="top-nav-link">Messages</a>
-            <a class="top-nav-link">Profile</a>
-            <a class="top-nav-link">Post a job</a>
-            <a class="top-nav-link">Sign In</a>
-          </nav>
-        </div>
-        <!-- search bar -->
-        <div class="search-bar">
-          <input
-            class="search-jobs-input"
-            placeholder="Search job title or keyword"
-          />
-          <input class="search-jobs-input" placeholder="City, state or ZIP" />
-          <button class="search-jobs-btn">Search Jobs</button>
-        </div>
-        <!-- filter bar -->
-        <div class="filter-bar">
-          <nav class="filter-nav">
-            <a class="filter-link">Posted Anytime</a>
-            <a class="filter-link">Within 25 miles</a>
-            <a class="filter-link">All Salaries</a>
-            <a class="filter-link">All Employment Types</a>
-            <a class="filter-link">All Titles</a>
-            <a class="filter-link">All Companies</a>
-          </nav>
-        </div>
+    <div id="overlay" onClick="turnOverlayOff()"></div>
+    <!--  header -->
+    <div class="header">
+      <!--  top bar -->
+      <div class="top-bar">
+        <img class="logo" src="./assets/logo.svg" alt="zip-logo" />
+        <nav class="top-nav">
+          <a class="top-nav-link">Jobs</a>
+          <a class="top-nav-link">Salaries</a>
+          <a class="top-nav-link">Messages</a>
+          <a class="top-nav-link">Profile</a>
+          <a class="top-nav-link">Post a job</a>
+          <a class="top-nav-link">Sign In</a>
+        </nav>
       </div>
-      <div class="content">
-        <!-- path bar -->
-        <div class="path-bar">
-          <a class="path-link">All Jobs /</a>
-          <a class="path-link">Software Engineer Jobs /</a>
-          <a class="path-link">Software Engineer Jobs in San Francisco, CA </a>
-        </div>
-        <!-- jobs -->
-        <div class="jobs-stats">
-          61+ Singer Jobs in Lebanon, KS Within 5000 miles of Lebanon, KS
-          <a>Change location</a>
-        </div>
-        <div id="position-snippets-section" class="jp-snippets-section"></div>
+      <!-- search bar -->
+      <div class="search-bar">
+        <input
+          class="search-jobs-input"
+          placeholder="Search job title or keyword"
+        />
+        <input class="search-jobs-input" placeholder="City, state or ZIP" />
+        <button class="search-jobs-btn">Search Jobs</button>
       </div>
+      <!-- filter bar -->
+      <div class="filter-bar">
+        <nav class="filter-nav">
+          <a class="filter-link">Posted Anytime</a>
+          <a class="filter-link">Within 25 miles</a>
+          <a class="filter-link">All Salaries</a>
+          <a class="filter-link">All Employment Types</a>
+          <a class="filter-link">All Titles</a>
+          <a class="filter-link">All Companies</a>
+        </nav>
+      </div>
+    </div>
+    <div class="content">
+      <!-- path bar -->
+      <div class="path-bar">
+        <a class="path-link">All Jobs /</a>
+        <a class="path-link">Software Engineer Jobs /</a>
+        <a class="path-link">Software Engineer Jobs in San Francisco, CA </a>
+      </div>
+      <!-- jobs -->
+      <div class="jobs-stats">
+        61+ Singer Jobs in Lebanon, KS Within 5000 miles of Lebanon, KS
+        <a>Change location</a>
+      </div>
+      <div id="position-snippets-section" class="jp-snippets-section"></div>
     </div>
   </body>
   <footer>

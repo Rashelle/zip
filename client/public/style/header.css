@@ -21,10 +21,75 @@
 
 .top-nav-link {
   color: #72777c;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 17px 10px;
 }
 
 .top-nav-link:hover {
   color: #2f3639;
   border-bottom: 2px solid #72777c;
+}
+
+.search-bar {
+  background-color: #f1f3f4;
+  padding: 10px 60px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.search-jobs-btn {
+  background-color: rgb(87, 178, 40);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 26px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.search-jobs-input {
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  border-width: 1px;
+  color: black;
+  cursor: text;
+  border-color: rgb(216, 219, 220);
+  padding: 8px 20px 8px 40px;
+  min-width: 288px;
+  margin-right: 10px;
+  background: url(/assets/input-search.svg);
+  background-position: 10px;
+  background-repeat: no-repeat;
+}
+
+.search-jobs-input:last-of-type {
+  background: url(/assets/input-location.svg);
+  background-position: 10px;
+  background-repeat: no-repeat;
+}
+
+.filter-bar {
+  padding: 10px 60px 0px 60px;
+}
+
+.filter-link {
+  color: black;
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+.filter-link:hover {
+  text-decoration: underline;
+}
+
+.filter-link::after {
+  content: " ▾";
+  width: 0;
+  height: 0;
+  color: rgb(114, 119, 124);
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
 }

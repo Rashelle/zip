@@ -20,7 +20,17 @@
   color: black;
   cursor: text;
   border-color: rgb(216, 219, 220);
-  padding: 8px 10px;
+  padding: 8px 20px;
   min-width: 288px;
   margin-right: 10px;
+  text-indent: 17px;
+  background: url(/assets/input-search.svg);
+  background-position: 10px;
+  background-repeat: no-repeat;
+}
+
+.search-jobs-input:last-of-type {
+  background: url(/assets/input-location.svg);
+  background-position: 10px;
+  background-repeat: no-repeat;
 }

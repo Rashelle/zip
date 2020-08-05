@@ -1,4 +1,5 @@
 function generatePositionSnippet(){
+    console.log(jobPositions);
     const positionBox = document.createElement(
         "div"
     );
@@ -12,7 +13,6 @@ function generatePositionSnippet(){
     positionLogo.setAttribute("src", "../../assets/logo.svg");
     positionLogo.setAttribute("alt", "position logo");
     positionLogo.classList.add("position-logo");
-
     positionBox.appendChild(positionLogo);
 
     const positionName = document.createElement(

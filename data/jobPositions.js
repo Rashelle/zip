@@ -1,4 +1,4 @@
-export const jobPositions = {
+const jobPositions = {
   "1a2b3c": {
     logo: "",
     name: "Tax Accountant",

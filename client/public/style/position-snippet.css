@@ -1,6 +1,6 @@
 /*  position snippet */
 .jp-snippets-section {
-  padding: 10px 20px 10px 60px;
+  padding-bottom: 10px;
 }
 
 .position-snippet {
@@ -13,6 +13,7 @@
   font-size: 14px;
   padding: 20px 20px 20px 50px;
   position: relative;
+  min-width: 280px;
 }
 
 .position-logo {
@@ -20,7 +21,7 @@
   height: 30px;
   border-radius: 50%;
   position: absolute;
-  top: 10px;
+  top: 20px;
   left: 10px;
   object-fit: contain;
   border: 1px solid #e0e2e3;

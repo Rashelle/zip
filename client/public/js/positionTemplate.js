@@ -11,41 +11,73 @@ function generatePositionSnippet(position) {
     return;
   }
 
-  appendContent(positionBox, "img", position.logo, "position-logo");
-  appendContent(positionBox, "a", position.name, "position-name");
-  appendContent(positionBox, "a", position.company, "position-company");
-  appendContent(positionBox, "a", position.location, "position-location");
+  appendContent(positionBox, "img", {
+    elmContent: position.logo,
+    elmClass: "position-logo"
+  });
+  appendContent(positionBox, "a", {
+    elmContent: position.name,
+    elmClass: "position-name",
+    eventListener: { eventName: "click", eventHandler: () => turnOverlayOn() }
+  });
+  appendContent(positionBox, "a", {
+    elmContent: position.company,
+    elmClass: "position-company"
+  });
+  appendContent(positionBox, "a", {
+    elmContent: position.location,
+    elmClass: "position-location"
+  });
 
   const payStr = `Pay $${position.minPay} - $${position.maxPay}`;
-  appendContent(positionBox, "div", payStr, "position-pay");
+  appendContent(positionBox, "div", {
+    elmContent: payStr,
+    elmClass: "position-pay"
+  });
 
   const benefitsStr = `Benefits ${position.benefits}`;
-  appendContent(positionBox, "div", benefitsStr, "position-benefits");
+  appendContent(positionBox, "div", {
+    elmContent: benefitsStr,
+    elmClass: "position-benefits"
+  });
 
   const typeStr = `Type ${position.type}`;
-  appendContent(positionBox, "div", typeStr, "position-type");
+  appendContent(positionBox, "div", {
+    elmContent: typeStr,
+    elmClass: "position-type"
+  });
 
-  appendContent(positionBox, "div", position.note);
-  appendContent(
-    positionBox,
-    "div",
-    position.description,
-    "position-description"
-  );
+  appendContent(positionBox, "div", {
+    elmContent: position.note,
+    elmClass: "position-note"
+  });
+
+  appendContent(positionBox, "div", {
+    elmContent: position.description,
+    elmClass: "position-description"
+  });
 
   const positionsSection = document.getElementById("position-snippets-section");
   return positionsSection.appendChild(positionBox);
 }
 
-function appendContent(parentElm, newElmType, newElmContent, elmClass) {
-  if (isEmpty(parentElm) || isEmpty(newElmType)) {
+function appendContent(parentElm, elmType, options = {}) {
+  const { elmContent, elmClass, eventListener } = options;
+
+  if (isEmpty(parentElm) || isEmpty(elmType)) {
     return;
   }
 
-  const el = document.createElement(newElmType);
-  if (newElmType == "img") el.setAttribute("src", newElmContent);
+  const el = document.createElement(elmType);
+  if (elmType == "img") el.setAttribute("src", elmContent);
   !!elmClass && el.classList.add(elmClass);
-  const content = document.createTextNode(newElmContent);
-  if (newElmType != "img") el.appendChild(content);
+  const content = document.createTextNode(elmContent);
+  if (elmType != "img") el.appendChild(content);
+
+  if (eventListener) {
+    const { eventName, eventHandler } = eventListener;
+    el.addEventListener(eventName, eventHandler);
+  }
+
   parentElm.appendChild(el);
 }

@@ -1,13 +1,13 @@
 .content {
   background-color: #f1f3f4;
-  padding: 10px 60px 10px 0px;
+  padding: 10px 60px 10px 60px;
   height: 100%;
   overflow-y: scroll;
 }
 
 .path-bar,
 .jobs-stats {
-  padding: 0px 60px 10px 60px;
+  padding-bottom: 10px;
 }
 
 .path-link {

@@ -2,6 +2,7 @@
   <head>
     <script type="text/javascript" src="./js/fetchJobsData.js"></script>
     <script type="text/javascript" src="./js/positionTemplate.js"></script>
+    <script type="text/javascript" src="./js/overlay.js"></script>
     <script type="text/javascript" src="./js/helperFunctions.js"></script>
     <link
       rel="stylesheet"
@@ -39,11 +40,17 @@
       href="./style/main.css"
       media="screen"
     />
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./style/position-overlay.css"
+      media="screen"
+    />
     <title>Zip Your Job</title>
   </head>
   <body>
     <div class="main-app">
+      <div id="overlay" onClick="turnOverlayOff()"></div>
       <!--  header -->
       <div class="header">
         <!--  top bar -->

@@ -116,6 +116,7 @@ function appendContent(parentElm, elmType, options = {}) {
 
     if (elmType == "img") {
       el.setAttribute("src", elmContent);
+      el.setAttribute("alt", "logo");
     } else {
       el.appendChild(content);
     }

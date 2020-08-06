@@ -47,7 +47,7 @@
 }
 
 .search-jobs-btn {
-  background-color: var(--g);
+  background-color: var(--green-color);
   color: var(--white-color);
   padding: 8px 14px;
   border-radius: 26px;

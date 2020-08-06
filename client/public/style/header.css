@@ -1,6 +1,7 @@
 :root {
   --green-color: #268814;
   --white-color: #fff;
+  --blue-color: #0e75e2;
   --bg-color: #f1f3f4;
   --light-border-color: #d8dbdc;
   --main-font-color: #2f3639;
@@ -68,12 +69,28 @@
   background: url(/assets/input-search.svg);
   background-position: 10px;
   background-repeat: no-repeat;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+
+/* .search-jobs-input:before {
+  content: "";
+  background: url(/assets/input-search.svg);
+  background-position: 10px;
+  background-repeat: no-repeat;
+} */
 
 .search-jobs-input:last-of-type {
   background: url(/assets/input-location.svg);
   background-position: 10px;
   background-repeat: no-repeat;
+}
+
+.filter-jobs {
+  color: var(--blue-color);
+  font-size: 14px;
+  display: none;
 }
 
 .filter-bar {
@@ -104,6 +121,16 @@
 
   .search-bar {
     padding: 10px 10px;
+    align-items: center;
+    background-color: var(--white-color);
+  }
+
+  .filter-jobs {
+    display: block;
+  }
+
+  .search-jobs-btn {
+    display: none;
   }
 
   .filter-bar {
@@ -113,6 +140,14 @@
   .top-nav {
     display: none;
   }
+
+  .search-jobs-input {
+    border: 1px solid var(--light-border-color);
+    background: var(--bg-color);
+    border-radius: 20px;
+    display: block;
+  }
+
   .search-jobs-input:last-of-type {
     display: none;
   }

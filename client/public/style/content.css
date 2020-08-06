@@ -28,4 +28,13 @@
   .content {
     padding: 10px;
   }
+
+  .path-bar {
+    display: none;
+  }
+
+  .jobs-stats {
+    color: #72777c;
+    font-size: 10px;
+  }
 }

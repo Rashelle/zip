@@ -23,3 +23,9 @@
 .path-link:hover {
   text-decoration: underline;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .content {
+    padding: 10px;
+  }
+}

@@ -1,4 +1,4 @@
-// Manifest for all JS code
+// Manifest for execution JS code
 
 fetchJobsData().then(result => {
   const { jobPositions } = result;

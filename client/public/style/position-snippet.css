@@ -17,13 +17,13 @@
   background-color: var(--white-color);
   border: solid 1px var(--dark-border-color);
   border-radius: 7px;
-  margin-bottom: 10px;
   width: 40%;
   color: var(--main-font-color);
   font-size: 14px;
   padding: 20px 20px 20px 50px;
   position: relative;
   min-width: 280px;
+  margin-bottom: 10px;
 }
 
 .position-apply {
@@ -126,7 +126,7 @@
 }
 
 .position-description {
-  color: ;
+  color: var(--main-font-color);
   margin-bottom: 0;
   margin-top: 10px;
   font-size: 13px;
@@ -137,13 +137,19 @@
   -webkit-box-orient: vertical;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   .position-snippet {
     border: solid 1px var(--light-border-color);
     width: 100%;
-    min-height: 200px;
     position: relative;
     margin-bottom: 50px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-top: 50px;
+  }
+
+  .position-snippet:first-of-type {
+    margin: 0px;
   }
 
   .position-apply {
@@ -152,14 +158,16 @@
     border-top-right-radius: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    top: 190px;
     left: 0;
-    /* bottom: 0; */
+    /* bottom: 0;
+     */
+    top: 210px;
     line-height: 0px;
+    max-height: 40px;
     padding: 20px;
   }
 
   .position-description {
-    font-size: 10px;
+    font-size: 12px;
   }
 }

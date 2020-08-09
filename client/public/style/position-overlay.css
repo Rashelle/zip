@@ -8,7 +8,6 @@
   right: 0;
   bottom: 0;
   background-color: var(--overlay-color);
-  z-index: 2;
   cursor: pointer;
   align-items: center;
   justify-content: center;

@@ -1,14 +1,3 @@
-:root {
-  --green-color: #268814;
-  --white-color: #fff;
-  --blue-color: #0e75e2;
-  --bg-color: #f1f3f4;
-  --light-border-color: #d8dbdc;
-  --main-font-color: #2f3639;
-  --link-color: #72777c;
-  --box-shadow: #e8e8e8;
-}
-
 #header {
   padding: 10px 0px;
   position: sticky;

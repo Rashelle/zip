@@ -59,3 +59,22 @@ ul {
 .layer-two {
   z-index: 200;
 }
+
+/* Colors */
+
+:root {
+  --menu-link-color: #232323;
+  --menu-color: #cdcdcd;
+  --green-color: #268814;
+  --dark-border-color: #e0e2e3;
+  --main-font-color: #2f3639;
+  --light-border-color: #d8dbdc;
+  --blue-color: #0e75e2;
+  --yellow-color: #ffd700;
+  --hover-bg-color: #f5f6f7;
+  --white-color: #fff;
+  --link-color: #72777c;
+  --box-shadow: #e8e8e8;
+  --bg-color: #f1f3f4;
+  --overlay-color: rgba(0, 0, 0, 0.5);
+}

@@ -32,6 +32,12 @@
       href="./style/general.css"
       media="screen"
     />
+     <link
+      rel="stylesheet"
+      type="text/css"
+      href="./style/nav-bar.css"
+      media="screen"
+    />
     <link
       rel="stylesheet"
       type="text/css"
@@ -65,6 +71,7 @@
       <!--  top bar -->
       <div class="top-bar">
         <img class="logo" src="./assets/logo.svg" alt="zip-logo" />
+        
         <nav class="top-nav">
           <a class="top-nav-link">Jobs</a>
           <a class="top-nav-link">Salaries</a>
@@ -73,7 +80,27 @@
           <a class="top-nav-link">Post a job</a>
           <a class="top-nav-link">Sign In</a>
         </nav>
+
+        <nav role="navigation">
+          <!-- <a class="top-nav-link">Jobs</a>
+          <a class="top-nav-link">Sign In</a> -->
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <!-- mobile-nav-menu -->
+              <a href="#" target="_blank"><li>Post a job</li></a>
+              <a href="#" target="_blank"><li>Profile</li></a>
+              <a href="#" target="_blank"><li>Messages</li></a>
+              <a href="#" target="_blank"><li>Salaries</li></a>
+            </ul>
+          </div>
+        </nav>
       </div>
+
+
       <!-- search bar -->
       <div class="search-bar">
         <input

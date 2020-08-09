@@ -30,6 +30,32 @@
   width: 154px;
 }
 
+
+/*
+  Screen reader only
+*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.menu-toggle {
+  background-image: url(/assets/menu.svg);
+  height: 15px;
+  width: 15px;
+  background-repeat: no-repeat;
+}
+
+.menu-toggle:active {
+  background-color: blue;
+}
+
 .top-nav-link {
   color: var(--link-color);
   padding: 10px 10px 17px 10px;

@@ -30,7 +30,6 @@
   width: 154px;
 }
 
-
 /*
   Screen reader only
 */
@@ -41,7 +40,7 @@
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   border: 0;
 }
 
@@ -50,20 +49,6 @@
   height: 15px;
   width: 15px;
   background-repeat: no-repeat;
-}
-
-.menu-toggle:active {
-  background-color: blue;
-}
-
-.top-nav-link {
-  color: var(--link-color);
-  padding: 10px 10px 17px 10px;
-}
-
-.top-nav-link:hover {
-  color: var(--main-font-color);
-  border-bottom: 2px solid #72777c;
 }
 
 .search-bar {
@@ -164,15 +149,10 @@
     display: none;
   }
 
-  .top-nav {
-    display: none;
-  }
-
   .search-jobs-input {
     border: 1px solid var(--light-border-color);
     border-radius: 20px;
     width: 100%;
-    
   }
 
   .search-jobs-input:last-of-type {

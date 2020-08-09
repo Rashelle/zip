@@ -32,7 +32,7 @@
       href="./style/general.css"
       media="screen"
     />
-     <link
+    <link
       rel="stylesheet"
       type="text/css"
       href="./style/nav-bar.css"
@@ -69,28 +69,27 @@
     <!--  header -->
     <div class="header">
       <!--  top bar -->
-      <div class="top-bar">
+      <div class="top-bar" aria-label="Top Site Bar">
         <img class="logo" src="./assets/logo.svg" alt="zip-logo" />
-        
-        <nav class="top-nav">
-          <a class="top-nav-link">Jobs</a>
-          <a class="top-nav-link">Salaries</a>
-          <a class="top-nav-link">Messages</a>
-          <a class="top-nav-link">Profile</a>
-          <a class="top-nav-link">Post a job</a>
-          <a class="top-nav-link">Sign In</a>
+
+        <nav id="horizontal-nav" role="navigation" aria-label="Site Menu">
+          <a href="#" target="_blank">Jobs</a>
+          <a href="#" target="_blank">Salaries</a>
+          <a href="#" target="_blank">Messages</a>
+          <a href="#" target="_blank">Profile</a>
+          <a href="#" target="_blank">Post a job</a>
+          <a href="#" target="_blank">Sign In</a>
         </nav>
 
-        <nav role="navigation">
-          <a class="top-nav-link">Jobs</a>
-          <a class="top-nav-link">Sign In</a>
-          <div id="menuToggle">
+        <nav id="vertical-nav" role="navigation" aria-label="Mobile Menu">
+          <!-- <a class="top-nav-link">Jobs</a>
+          <a class="top-nav-link">Sign In</a> -->
+          <div id="menu-toggle">
             <input type="checkbox" />
             <span></span>
             <span></span>
             <span></span>
             <ul id="menu">
-              <!-- mobile-nav-menu -->
               <a href="#" target="_blank"><li>Post a job</li></a>
               <a href="#" target="_blank"><li>Profile</li></a>
               <a href="#" target="_blank"><li>Messages</li></a>
@@ -99,7 +98,6 @@
           </div>
         </nav>
       </div>
-
 
       <!-- search bar -->
       <div class="search-bar">
@@ -111,6 +109,7 @@
         <a class="filter-jobs">Filter</a>
         <button class="search-jobs-btn">Search Jobs</button>
       </div>
+
       <!-- filter bar -->
       <div class="filter-bar">
         <nav class="filter-nav">
@@ -130,6 +129,7 @@
         <a class="path-link">Software Engineer Jobs /</a>
         <a class="path-link">Software Engineer Jobs in San Francisco, CA </a>
       </div>
+
       <!-- jobs -->
       <div class="jobs-stats">
         61+ Singer Jobs in Lebanon, KS Within 5000 miles of Lebanon, KS
@@ -138,7 +138,9 @@
       <div id="position-snippets-section" class="jp-snippets-section"></div>
     </div>
   </body>
-  <footer>
+
+  <!-- Footer -->
+  <footer id="footer-nav" aria-label="Footer">
     <script src="./js/app.js"></script>
   </footer>
 </html>

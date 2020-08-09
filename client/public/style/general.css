@@ -47,3 +47,7 @@ button {
 a {
   cursor: pointer;
 }
+
+ul{
+  padding-inline-start: unset;
+}

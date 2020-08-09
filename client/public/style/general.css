@@ -15,7 +15,6 @@ body * {
   line-height: 1.15;
 }
 
-
 button,
 input,
 optgroup,
@@ -31,8 +30,8 @@ input {
   overflow: visible;
 }
 
-input:focus{
-    outline: none;
+input:focus {
+  outline: none;
 }
 
 button {
@@ -48,6 +47,15 @@ a {
   cursor: pointer;
 }
 
-ul{
+ul {
   padding-inline-start: unset;
+}
+
+/* Stacking layers */
+.layer-one {
+  z-index: 100;
+}
+
+.layer-two {
+  z-index: 200;
 }

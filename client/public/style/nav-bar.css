@@ -66,29 +66,32 @@
   transform: rotate(-45deg) translate(0, -1px);
 }
 
+/* #menuToggle input:checked > #menu{
+    display: none;
+} */
+
 #menu {
-    display: block;
-    border: solid transparent;
     min-width: 150px;
     position: absolute;
     border-radius: 4px;
     box-shadow: 0 -1px 1px rgba(0,0,0,0.05), 0 3px 6px rgba(0,0,0,0.1);
     background-color: white;
-    top: 60px;
-    right: 8px; 
-    margin: -25px -180px 0 0;
+    top: 20;
+    left: -100%; 
     list-style-type: none;
-    -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
+    transform: translate(100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-
+    /* z-index: 101; */
+    /* -webkit-font-smoothing: antialiased; */
+    /* margin: -25px -180px 0 0; */
 }
 
 #menu li{
   padding: 5px 5px;
   font-size: 12px;
 }
+
 #menuToggle input:checked ~ ul{
   transform: none;
 }

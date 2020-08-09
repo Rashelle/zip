@@ -142,8 +142,7 @@
     border: solid 1px var(--light-border-color);
     width: 100%;
     position: relative;
-    margin: 50px 0px 50px 0px;
-    padding-bottom: 56px;
+    margin: 25px 0px 25px 0px;
     padding-bottom: 70px;
   }
 

@@ -3,33 +3,34 @@
   --bg-color: #f1f3f4;
 }
 
-.content {
+#page-content {
   background-color: var(--bg-color);
   padding: 10px 60px 10px 60px;
   height: 100%;
   overflow-y: scroll;
 }
 
-.path-bar,
+#path-bar,
 .jobs-stats {
   padding-bottom: 10px;
 }
 
-.path-link {
+#path-bar a {
   font-size: 12px;
   color: var(--green-color);
+  text-decoration: none;
 }
 
-.path-link:hover {
+#path-bar a:hover {
   text-decoration: underline;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  .content {
+  #page-content {
     padding: 10px;
   }
 
-  .path-bar {
+  #path-bar {
     display: none;
   }
 

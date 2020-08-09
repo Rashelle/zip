@@ -67,9 +67,9 @@
   <body>
     <div id="overlay" onClick="turnOverlayOff()"></div>
     <!--  header -->
-    <div class="header layer-one">
+    <div id="header" class="layer-one">
       <!--  top bar -->
-      <div class="top-bar" aria-label="Top Site Bar">
+      <div id="top-bar" aria-label="Top Site Bar">
         <img class="logo" src="./assets/logo.svg" alt="zip-logo" />
 
         <nav id="horizontal-nav" role="navigation" aria-label="Site Menu">
@@ -82,8 +82,8 @@
         </nav>
 
         <nav id="vertical-nav" role="navigation" aria-label="Mobile Menu">
-          <!-- <a class="top-nav-link">Jobs</a>
-          <a class="top-nav-link">Sign In</a> -->
+          <a href="#" target="_blank">Jobs</a>
+          <a href="#" target="_blank">Sign In</a>
           <div id="menu-toggle">
             <input type="checkbox" />
             <span></span>
@@ -100,7 +100,7 @@
       </div>
 
       <!-- search bar -->
-      <div class="search-bar">
+      <div id="search-bar">
         <input
           class="search-jobs-input"
           placeholder="Search job title or keyword"
@@ -111,23 +111,25 @@
       </div>
 
       <!-- filter bar -->
-      <div class="filter-bar">
-        <nav class="filter-nav">
-          <a class="filter-link">Posted Anytime</a>
-          <a class="filter-link">Within 25 miles</a>
-          <a class="filter-link">All Salaries</a>
-          <a class="filter-link">All Employment Types</a>
-          <a class="filter-link">All Titles</a>
-          <a class="filter-link">All Companies</a>
+      <div id="filter-bar">
+        <nav>
+          <a href="#" target="_blank">Posted Anytime</a>
+          <a href="#" target="_blank">Within 25 miles</a>
+          <a href="#" target="_blank">All Salaries</a>
+          <a href="#" target="_blank">All Employment Types</a>
+          <a href="#" target="_blank">All Titles</a>
+          <a href="#" target="_blank">All Companies</a>
         </nav>
       </div>
     </div>
-    <div class="content">
+    <div id="page-content">
       <!-- path bar -->
-      <div class="path-bar">
-        <a class="path-link">All Jobs /</a>
-        <a class="path-link">Software Engineer Jobs /</a>
-        <a class="path-link">Software Engineer Jobs in San Francisco, CA </a>
+      <div id="path-bar">
+        <a href="#" target="_blank">All Jobs /</a>
+        <a href="#" target="_blank">Software Engineer Jobs /</a>
+        <a href="#" target="_blank"
+          >Software Engineer Jobs in San Francisco, CA
+        </a>
       </div>
 
       <!-- jobs -->

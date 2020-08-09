@@ -1,3 +1,9 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -5,10 +11,10 @@ body {
 }
 
 body * {
-  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.15;
 }
+
 
 button,
 input,
@@ -23,6 +29,10 @@ textarea {
 button,
 input {
   overflow: visible;
+}
+
+input:focus{
+    outline: none;
 }
 
 button {

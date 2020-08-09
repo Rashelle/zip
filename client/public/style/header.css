@@ -75,8 +75,7 @@
 }
 
 /* .search-jobs-input:before {
-  content: "";
-  background: url(/assets/input-search.svg);
+  content: "f002";
   background-position: 10px;
   background-repeat: no-repeat;
 } */
@@ -123,6 +122,8 @@
     padding: 10px 10px;
     align-items: center;
     background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
   }
 
   .filter-jobs {
@@ -143,9 +144,9 @@
 
   .search-jobs-input {
     border: 1px solid var(--light-border-color);
-    background: var(--bg-color);
     border-radius: 20px;
-    display: block;
+    width: 100%;
+    
   }
 
   .search-jobs-input:last-of-type {

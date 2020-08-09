@@ -19,5 +19,5 @@
 }
 
 #overlay > :first-child {
-  width: 80%;
+  max-width: 80%;
 }
